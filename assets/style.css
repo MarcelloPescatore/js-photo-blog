@@ -7,3 +7,65 @@ Sfruttando gli screen e gli asset in allegato riproduciamo la grafica proposta i
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 150px;
+  background-image: url(./img/wall.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Sometype Mono", monospace;
+  }
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  background-image: url(./img/cork.png);
+
+  .container {
+    padding: 0 2rem;
+    background-color: black;
+
+    & > .row {
+      background-color: red;
+      margin: 5rem -2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+
+      .card {
+        width: 300px;
+        height: 355px;
+        background-color: white;
+      }
+    }
+  }
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  max-width: 1030px;
+}
+
+p {
+  font-family: "Edu TAS Beginner", cursive;
+}
+
+.col-4 {
+  width: calc((100% / 12) * 3);
+}
