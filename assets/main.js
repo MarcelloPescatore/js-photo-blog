@@ -21,6 +21,7 @@ axios
     responseArr.forEach((obj) => {
       //seleziono l'url dall'oggetto
       const objUrl = obj.url;
+      const objTitle = obj.title
       // aggiungo ogni volta alla variabile markup un template con url diverso
       markup += `
                     <div class="card col-4">
@@ -31,7 +32,7 @@ axios
                         <div class="photo" style="background-image: url(${objUrl});">
                         </div>
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>${objTitle}</p>
                         </div>
                     </div> 
             `;
