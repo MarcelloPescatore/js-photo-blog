@@ -19,6 +19,14 @@
       rel="stylesheet"
     />
 
+    <!-- axios link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- link css -->
     <link rel="stylesheet" href="./assets/style.css" />
 
@@ -26,72 +34,18 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1>estate '24</h1>
-      </div>
+      <h1>estate '24</h1>
     </header>
     <!-- /header -->
 
     <main>
       <div class="container">
-        <div class="row">
-          <div class="card col-4">
-            <div class="pin">
-              <img src="./assets/img/pin.svg" alt="" />
-            </div>
-            <div class="photo"></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="card col-4">
-            <div class="pin">
-              <img src="./assets/img/pin.svg" alt="" />
-            </div>
-            <div class="photo"></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="card col-4">
-            <div class="pin">
-              <img src="./assets/img/pin.svg" alt="" />
-            </div>
-            <div class="photo"></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="card col-4">
-            <div class="pin">
-              <img src="./assets/img/pin.svg" alt="" />
-            </div>
-            <div class="photo"></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="card col-4">
-            <div class="pin">
-              <img src="./assets/img/pin.svg" alt="" />
-            </div>
-            <div class="photo"></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="card col-4">
-            <div class="pin">
-              <img src="./assets/img/pin.svg" alt="" />
-            </div>
-            <div class="photo"></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
+        <div class="row" id="row_posts"></div>
       </div>
     </main>
     <!-- /main -->
+
+    <!-- link script -->
+    <script src="./assets/main.js"></script>
   </body>
 </html>

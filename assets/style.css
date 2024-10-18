@@ -25,8 +25,15 @@ header {
     text-transform: uppercase;
     font-style: italic;
     text-align: center;
-    font-size: 50px;
+    vertical-align: middle;
+    font-size: 90px;
     font-family: "Sometype Mono", monospace;
+  }
+
+  @media screen and (max-width: 530px) {
+    h1 {
+      font-size: 60px;
+    }
   }
 }
 
@@ -39,7 +46,7 @@ main {
     padding: 0 2rem;
 
     & > .row {
-      margin: 5rem -2rem;
+      margin: 6rem -2rem;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -65,7 +72,6 @@ main {
         .photo {
           width: 263px;
           height: 263px;
-          background-image: url(https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRjttr241unhTmPXnd40dHZ5NB4hcOgNUPuz5JG37tiAg03L2Y4zLROZOoa2PuH__yTxxj5IcRqnUCNrsA);
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
@@ -85,13 +91,31 @@ main {
 }
 
 .container {
-  width: 70%;
+  width: 95%;
   margin: auto;
-  max-width: 1030px;
+  max-width: 1440px;
+}
+
+@media screen and (min-width: 1365px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 50%;
+  }
 }
 
 p {
   font-family: "Edu TAS Beginner", cursive;
+}
+
+@media screen and (min-width: 770px) {
+  p {
+    font-size: 18px;
+  }
 }
 
 .col-4 {
