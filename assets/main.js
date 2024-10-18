@@ -6,16 +6,17 @@ Inseriamo un foglio JavaScript ed effettuiamo una chiamata AJAX all’API di JSO
 //set up
 const rowPostEl = document.getElementById("row_posts");
 
+
 //elaboration
 //effettuo una chiamata AJAX
 axios
-  .get("https://jsonplaceholder.typicode.com/photos?_limit=6")
-  .then((response) => {
-    // creo una variabile con all'interno la risposta dell'array del'endpoint
-    const responseArr = response.data;
-
-    //creo ua variabile in cui inserire tutto il template licteral
-    let markup = "";
+.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
+.then((response) => {
+  // creo una variabile con all'interno la risposta dell'array del'endpoint
+  const responseArr = response.data;
+  
+  //creo ua variabile in cui inserire tutto il template licteral
+  let markup = "";
     // itero all'interno dgli oggetti della risposta
     responseArr.forEach((obj) => {
       //seleziono l'url dall'oggetto
@@ -26,6 +27,7 @@ axios
                         <div class="pin">
                             <img src="./assets/img/pin.svg" alt="" />
                         </div>
+                        <div id="loader" style="display: block;">Caricamento in corso...</div>
                         <div class="photo" style="background-image: url(${objUrl});">
                         </div>
                         <div class="description">

@@ -57,6 +57,8 @@ main {
         display: flex;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 355px;
         width: 300px;
         padding: 1rem 1rem;
@@ -72,9 +74,17 @@ main {
         .photo {
           width: 263px;
           height: 263px;
-          background-repeat: no-repeat;
-          background-size: cover;
           background-position: center;
+          background-size: cover;
+          z-index: 9999;
+        }
+
+        #loader{
+          position: absolute;
+          z-index: 1;
+          top: 150px;
+          left: 50%;
+          transform: translateX(-50%);
         }
 
         .description {
