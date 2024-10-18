@@ -65,7 +65,7 @@ main {
         .photo {
           width: 263px;
           height: 263px;
-          background-color: blue;
+          background-image: url(https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRjttr241unhTmPXnd40dHZ5NB4hcOgNUPuz5JG37tiAg03L2Y4zLROZOoa2PuH__yTxxj5IcRqnUCNrsA);
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
