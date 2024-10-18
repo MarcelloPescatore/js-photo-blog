@@ -37,20 +37,43 @@ main {
 
   .container {
     padding: 0 2rem;
-    background-color: black;
 
     & > .row {
-      background-color: red;
       margin: 5rem -2rem;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 2rem;
 
       .card {
-        width: 300px;
-        height: 355px;
         background-color: white;
+        display: flex;
+
+        flex-direction: column;
+        height: 355px;
+        width: 300px;
+        padding: 1rem 1rem;
+        position: relative;
+
+        .pin {
+          position: absolute;
+          top: -15px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .photo {
+          width: 263px;
+          height: 263px;
+          background-color: blue;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+
+        .description {
+          margin-top: 1rem;
+        }
       }
     }
   }
