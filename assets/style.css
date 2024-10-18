@@ -48,7 +48,7 @@ main {
       .card {
         background-color: white;
         display: flex;
-
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         flex-direction: column;
         height: 355px;
         width: 300px;
@@ -74,6 +74,11 @@ main {
         .description {
           margin-top: 1rem;
         }
+      }
+
+      .card:hover {
+        transform: scale(1.1) rotate(10deg);
+        z-index: 999999;
       }
     }
   }
