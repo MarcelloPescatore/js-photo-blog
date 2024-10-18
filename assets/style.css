@@ -57,7 +57,7 @@ main {
         display: flex;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         height: 355px;
         width: 300px;
@@ -87,7 +87,7 @@ main {
           transform: translateX(-50%);
         }
 
-        .description {
+        .title {
           margin-top: 1rem;
         }
       }

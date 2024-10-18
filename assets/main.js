@@ -31,7 +31,7 @@ axios
                         <div id="loader" style="display: block;">Caricamento in corso...</div>
                         <div class="photo" style="background-image: url(${objUrl});">
                         </div>
-                        <div class="description">
+                        <div class="title">
                             <p>${objTitle}</p>
                         </div>
                     </div> 
