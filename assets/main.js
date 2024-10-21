@@ -42,6 +42,7 @@ axios
 
     // verifichiamo l'array di risposta in console
     console.log(responseArr);
+
     /* 
     Milestone 2
     Facciamo sparire l’overlay con l’aiuto di una classe CSS che imposti il display: none .
@@ -59,6 +60,13 @@ axios
     //elaboration
     photoEls.forEach((photoEl) => {
       photoEl.addEventListener("click", function () {
+        const photoUrl = photoEl.style.backgroundImage;
+        console.log(photoUrl.length);
+
+        const imgPhotoClicked = document.querySelector(".image-zoomed");
+        console.log(imgPhotoClicked);
+
+        imgPhotoClicked.style.backgroundImage = `${photoUrl}`;
         //appare overlay
         const containerOverlayEl = document.querySelector(".container-overlay");
         containerOverlayEl.style.display = "block";
