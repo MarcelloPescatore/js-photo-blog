@@ -60,13 +60,16 @@ axios
     //elaboration
     photoEls.forEach((photoEl) => {
       photoEl.addEventListener("click", function () {
+        //seleziono l'url del bgImage dall'attributo style
         const photoUrl = photoEl.style.backgroundImage;
         console.log(photoUrl.length);
 
+        //selziono il div che mi interessa all'interno del container overlay
         const imgPhotoClicked = document.querySelector(".image-zoomed");
         console.log(imgPhotoClicked);
-
+        //applico a questo div lo stesso bg della foto cliccata
         imgPhotoClicked.style.backgroundImage = `${photoUrl}`;
+
         //appare overlay
         const containerOverlayEl = document.querySelector(".container-overlay");
         containerOverlayEl.style.display = "block";
