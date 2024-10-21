@@ -143,6 +143,7 @@ Facciamo in modo di creare un overlay che copra l’intera pagina e all’intern
   position: absolute;
   z-index: 9999999999;
   background-color: rgba(0, 0, 0, 0.85);
+  display: none;
 }
 
 .photo-clicked {
