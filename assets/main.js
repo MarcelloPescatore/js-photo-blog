@@ -21,6 +21,17 @@ axios
       //seleziono l'url dall'oggetto
       const objUrl = obj.url;
       const objTitle = obj.title;
+      //trasformo objtitle in un array di parole
+      const arrWords = objTitle.split(" ");
+      // itero all'interno di questo array trasformando il primo carattere in maiuscolo e aggiungendo il resto della parola
+      const arrCap = arrWords.map(
+        (word) => word.charAt(0).toUpperCase() + word.slice(1)
+      );
+      /* console.log(arrCap); */
+      // ora trasformo l'arrCap in una stringa
+      const objTitleCap = arrCap.join(" ");
+      /* console.log(objTitleCap); */
+
       // aggiungo ogni volta alla variabile markup un template con url diverso
       markup += `
                     <div class="card col-4">
@@ -31,7 +42,7 @@ axios
                         <div class="photo" style="background-image: url(${objUrl});">
                         </div>
                         <div class="title">
-                            <p>${objTitle}</p>
+                            <p>${objTitleCap}</p>
                         </div>
                     </div> 
             `;
@@ -62,7 +73,7 @@ axios
       photoEl.addEventListener("click", function () {
         //seleziono l'url del bgImage dall'attributo style
         const photoUrl = photoEl.style.backgroundImage;
-        console.log(photoUrl.length);
+        console.log(photoUrl);
 
         //selziono il div che mi interessa all'interno del container overlay
         const imgPhotoClicked = document.querySelector(".image-zoomed");
